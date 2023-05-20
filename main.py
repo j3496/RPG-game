@@ -12,6 +12,7 @@ playermap = [[3, 0, 3, 0],
 		    [3, 0, 0, 3],
 		    [0, 3, 0, 0]]
 
+
 class Player(object):
 	"""The player"""
 
