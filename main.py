@@ -87,6 +87,7 @@ def Map1():
 	with open("map.txt", "w") as file:
 		file.write(f"{place}\n")
 
+
 def main():  #Loads the rest of the program -- returns user position results.
 	inp = input("Press any button to continue.: ")
 	if inp != '':
