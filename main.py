@@ -62,10 +62,11 @@ class Player(object):
 
 
 class Room(object):
+	"""tracks the players position"""
 
 	def __init__(self, column, row):
 		self.userpos = playermap[column][row]
-		self.column = column  #Column/Row dictates player position in tilemap.
+		self.column = column
 		self.row = row
 
 
@@ -79,7 +80,7 @@ playermap = [[3, 0, 3, 0],
 		    [0, 3, 0, 0]]
 
 room = Room( 0, 0)  #Player position for 'room' and 'Room' class
-user = Player('Bryce')
+user = Player('P1')
 
 def Map1():
 	"""prints out the map to 'map.txt' """
@@ -103,10 +104,13 @@ def main():  #Loads the rest of the program -- returns user position results.
 			print("That's not the correct answer")
 
 try:
+	# Checks the "main" function for errors
 	main()
 except:
+	# prints out that there was an error to "error.txt", if there's an error
 	with open("error.txt", "w") as file:
 		file.write("Error\n")
 else:
+	# prints that there were no errors to "error.txt", if there's no errors
 	with open("error.txt", "w") as file:
 		file.write("No errors\n")
