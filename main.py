@@ -3,6 +3,7 @@
 ## RPG game
 
 import time
+import enemy
 
 x = 0
 y = 0
@@ -70,6 +71,7 @@ class Player(object):
 			if room.userpos == 0:
 				# Description an function for the 'enemy' tile
 				print("You've found an enemy ")
+				enemy.fighting.Enemy(self)
 			elif room.userpos == 1:
 				# Description for the 'spawn room'
 				print("Spawn Room ")
@@ -119,7 +121,7 @@ def main():
 		else:
 			print("That's not the correct answer ")
 
-
+main()
 try:
 	# Checks the "main" function for errors
 	main()
