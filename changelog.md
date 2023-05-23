@@ -5,5 +5,6 @@ added - "error.txt" for printing errors to instead of showing up in the console
 
 v1.1
 started working on adding the enemy back into the game
-added the enemy file back into the game
-added inventory file back into the game
+added - the "enemy" file back into the game
+added - "Inventory" file back into the game
+changed - the "enemy" file to work as a class

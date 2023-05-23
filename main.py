@@ -107,7 +107,9 @@ def Map1():
 
 
 def main():
-	# Loads the rest of the program -- returns user position results.
+	"""
+	Loads the program, and lets you choose between printing the map or starting the game
+ 	"""
 	inp = input("Press any button to continue.: ")
 	if inp != '':
 		menu = input("input 'Start' to start the game \n'Map' to print map to 'map.txt' \n")
@@ -121,7 +123,7 @@ def main():
 		else:
 			print("That's not the correct answer ")
 
-main()
+
 try:
 	# Checks the "main" function for errors
 	main()

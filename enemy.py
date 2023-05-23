@@ -7,8 +7,10 @@ import Inventory
 
 
 class fighting():
+	"""Fighting an enemy"""
 
 	def __init__(self):
+		"""Initiates the code"""
 		print("")
 
 	def Enemy(self):
